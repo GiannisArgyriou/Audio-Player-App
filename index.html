@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Audio Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <span id="name"><img src="images/profile.svg" id="iconProfile" alt="Profile Picture">Isno</span> </span>
+            <div> <a class="active" href="#home"> <img src="images/home.svg" class="icons">Home</a> </div>
+            <div> <a href="#search"> <img src="images/search.svg" class="icons">Search</a> </div>
+            <div> <a href="#library"> <img src="images/library.svg" class="icons"> Library</a> </div>
+            <br>
+            <div> <a href="#playlist"> <img src="images/create.svg" class="icons2">Create Playlist</a> </div>
+            <div> <a href="#liked"> <img src="images/liked.svg" class="icons2">Liked Songs</a> </div>
+            <hr>
+            <div class="playlist">
+                <a href="#playlist1">My playlist 1</a>
+            </div>
+        </div>
+        <div class="content">
+            <span id="greeting">Good Afternoon</span>
+            <div id="tracks">
+            </div>
+            <div class="suggestions">
+                <h2 id="suggestionsTitle">New Episodes</h2>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+            </div>
+            <div id="suggestions2" class="suggestions">
+                <h2 id="suggestionsTitle2"> Made for you</h2>
+                <p id="smallText"> Get better recommendations the more you listen </p>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+                <span class="weeklyDiscovery"> <img src = "images/placeholder.svg" class="centerAlign"> <h3 class="textAlign"> Discover Weekly </h3> <p class="textAlign">Your fresh mixtape of new music</p> </span>
+            </div>
+        </div>
+    </div>
+    <div id="audioPlayer">
+        <audio id="playingAudio" src="" preload="metadata"></audio>
+    <div id = "row1">
+        <div id="currentTrack">
+            <img id="currentTrackImage" src="images/trackplaceholder.jpg"> 
+            <p id="currentTrackTitle">Track Title</p>
+            <p id="currentTrackArtist">Track Artist</p>
+            <img id="heart" src="images/heart.svg">
+        </div>
+        <div id="buttons">
+            <img id="shuffle" src="images/shuffle.svg">
+            <img id="previous" src="images/previous.svg">
+            <button id="mainButton"> <img id="playButton" class="play" src="images/play.svg"></button>
+            <img id="next" src="images/next.svg">
+            <img id="repeat" src="images/repeat.svg">
+        </div>
+        <div id="volumeFull">
+            <img id="list" src="images/list.svg">
+            <img id="volume" src="images/volume.svg">
+            <input class="styledSlider slider-progress" id = "volumeRange" type="range" min="0" max="100">
+            <img id="fullScreen" src="images/fullscreen.svg">
+        </div>
+    <div id = "row2">
+        <p id="timeStart">0:00</p>
+        <input class="styledSlider slider-progress2" id = "seek" type="range" min="0" max="100" step="0.1" value="0">
+        <p id="timeEnd">0:00</p>
+    </div>
+    </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
